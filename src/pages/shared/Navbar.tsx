@@ -53,7 +53,7 @@ const Navbar2 = () => {
 
   // }
   return (
-    <div id="nav" className="navbar bg-base-100">
+    <div id="nav" className="navbar bg-base-100 border-b-2">
       <div className="navbar-start">
         {/* menu */}
         <div className="dropdown">
@@ -78,14 +78,14 @@ const Navbar2 = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <NavLink to="/">Home</NavLink>
-            <NavLink to="/register">Register</NavLink>
-            <NavLink to="/add-product">Add Product</NavLink>
+            <NavLink to="/products">Products</NavLink>
+            <NavLink to="/about-us">About Us</NavLink>
             <NavLink to="/my-cart">My Cart</NavLink>
           </ul>
         </div>
         {/* logo and title */}
         <div className="navbar-start flex-1">
-          <div className="flex flex-col md:flex-row justify-start items-center gap-2 border">
+          <div className="flex flex-col md:flex-row justify-start items-center gap-2">
             <img
               className="rounded-full bg-white w-12 border"
               src={logo}
@@ -104,8 +104,8 @@ const Navbar2 = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 flex gap-3">
           <NavLink to="/">Home</NavLink>
-          <NavLink to="/register">Register</NavLink>
-          <NavLink to="/add-product">Add Product</NavLink>
+          <NavLink to="/products">Products</NavLink>
+          <NavLink to="/about-us">About Us</NavLink>
           <NavLink to="/my-cart">My Cart</NavLink>
         </ul>
       </div>
