@@ -66,7 +66,7 @@ To set up the project locally, follow these steps:
 
    ```sh
    git clone https://github.com/ronee-muhammad-rayhan/keyboard-zone-client.git
-   cd mechanical-keyboards-ecommerce
+   cd keyboard-zone-client
    ```
 
 2. Install the dependencies:
