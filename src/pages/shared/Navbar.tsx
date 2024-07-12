@@ -1,9 +1,9 @@
 import {
   NavigationMenu,
   NavigationMenuItem,
-  NavigationMenuLink,
+  // NavigationMenuLink,
   NavigationMenuList,
-  navigationMenuTriggerStyle,
+  // navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 // import { Link } from "@radix-ui/react-navigation-menu";
 // import { Clapperboard } from "lucide-react";
@@ -29,11 +29,11 @@ export default function Navbar() {
           <NavigationMenuList>
             <div className="flex justify-end">
               <NavigationMenuItem>
-                <Link to="/products">
+                {/* <Link to="/products">
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     Products
                   </NavigationMenuLink>
-                </Link>
+                </Link> */}
               </NavigationMenuItem>
             </div>
           </NavigationMenuList>
