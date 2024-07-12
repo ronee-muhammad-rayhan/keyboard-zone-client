@@ -1,11 +1,15 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { Button } from "@/components/ui/button";
+import { useGetAllProductsQuery } from "@/redux/api/api";
 import { Play, Plus, Star, StarIcon } from "lucide-react";
 import { useParams } from "react-router-dom";
 
 export default function ProductDetails() {
   const { id: slug } = useParams();
+
+  const { data: products, error, isLoading } = useGetAllProductsQuery({});
+  console.log(products, error, isLoading);
 
   const renderStars = (rating: number) => {
     const stars = [];

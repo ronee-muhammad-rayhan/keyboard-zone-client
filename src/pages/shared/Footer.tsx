@@ -1,3 +1,5 @@
+import logo from "@/assets/keyboard-zone-logo-react.svg";
+
 export default function Footer() {
   return (
     <div>
@@ -5,9 +7,16 @@ export default function Footer() {
       <footer className="bg-gray-800 text-gray-400 py-6">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-4 md:mb-0">
-              <h5 className="text-lg font-bold text-white">Keyboard Zone</h5>
-              <p>&copy; 2024 Keyboard Zone. All rights reserved.</p>
+            <div className="mb-4 md:mb-0 flex justify-center items-center gap-2">
+              <img
+                className="rounded-full size-5"
+                src={logo}
+                alt="KeyboardZone-logo"
+              />
+              <p className="flex">
+                Keyboard Zone &copy; 2024{" "}
+                <span className="hidden sm:block">. All rights reserved.</span>
+              </p>
             </div>
             <div className="flex space-x-4">
               <a href="/about" className="hover:text-white">
