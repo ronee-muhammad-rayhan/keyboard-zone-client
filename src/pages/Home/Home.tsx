@@ -84,7 +84,7 @@ export default function Home() {
       <ProductCardCl />
       <ProductCardCG product={product1} />
       {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
-      <pre>{JSON.stringify(products, null, 2)}</pre>
+      {/* <pre>{JSON.stringify(products, null, 2)}</pre> */}
       <FeaturedProducts />
     </div>
   );
